@@ -6,7 +6,7 @@
   <title>Login</title>
 </head>
 <body>
-  <form action="receive.php" method="post">
+  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <table>
       <tr>
         <td>Email: </td>
@@ -24,3 +24,11 @@
   </form>
 </body>
 </html>
+<?php
+  if (isset($_POST['validate'])) {
+    echo "Username: {$_POST['login_email']}<br>";
+    echo "Password: {$_POST['login_password']}";
+  } else {
+    echo "Did not receive any request!";
+  }
+?>
