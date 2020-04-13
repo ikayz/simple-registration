@@ -34,10 +34,10 @@
 </html>
 <?php
   if (isset($_POST['validate'])) {
-    echo "Name: {$_POST['name']}<br>";
-    echo "Email: {$_POST['email']}";
-    echo "Subject: {$_POST['subject']}";
-    echo "Comments: {$_POST['comments']}";
+    echo "Name: " . trim(htmlspecialchars($_POST['name'])) . "<br>";
+    echo "Email: " . trim(htmlspecialchars($_POST['email'])) . "<br>";
+    echo "Subject: " . trim(htmlspecialchars($_POST['subject'])) . "<br>";
+    echo "Comments: " . trim(htmlspecialchars($_POST['comments']));
   } else {
     echo "Did not receive any request!";
   }
