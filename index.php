@@ -25,10 +25,6 @@
         <td><textarea name="comments"></textarea></td>
       </tr>
       <tr>
-        <td>Password: </td>
-        <td><input type="password" name="password"/></td>
-      </tr>
-      <tr>
         <td><input type="hidden" value="yes" name="validate"></td>
         <td><input type="submit" name="submit"></td>
       </tr>
@@ -38,8 +34,10 @@
 </html>
 <?php
   if (isset($_POST['validate'])) {
-    echo "Username: {$_POST['login_email']}<br>";
-    echo "Password: {$_POST['login_password']}";
+    echo "Name: {$_POST['name']}<br>";
+    echo "Email: {$_POST['email']}";
+    echo "Subject: {$_POST['subject']}";
+    echo "Comments: {$_POST['comments']}";
   } else {
     echo "Did not receive any request!";
   }
