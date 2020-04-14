@@ -55,6 +55,16 @@
         <td><input type="text" name="subject"/><?php echo $subject; ?></td>
       </tr>
       <tr>
+        <td>
+          Male<br>
+          Female
+        </td>
+        <td>
+          <input type="radio" value="male" name="gender"><br>
+          <input type="radio" value="female" name="gender">
+        </td>
+      </tr>
+      <tr>
         <td>Comments: </td>
         <td><textarea name="comments"></textarea></td>
       </tr>
