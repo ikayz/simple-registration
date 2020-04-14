@@ -4,10 +4,11 @@
   $subject = '';
   $comments = '';
   $result = '';
+  $style_red = 'color: red';
 
   if (isset($_POST['validate'])) {
     if(empty($_POST['name'])) {
-        $name = "Name field is empty";
+        $name = "<span style=\"$style_red\">" . "Name field is empty" . "</span";
     } else {
         $name = trim(htmlspecialchars($_POST['name']));
     }
@@ -15,11 +16,11 @@
     if(!empty($_POST['email'])) {
         $email = strip_tags(trim($_POST['email']));
     } else {
-        $email = "Email field is empty";
+        $email = "<span style=\"$style_red\">" . "Email field is empty" . "</span>";
     }
 
     if(empty($_POST['subject'])) {
-        $subject = "Subject field is empty";
+        $subject = "<span style=\"$style_red\">" . "Subject field is empty" . "</span>";
     } else {
         $subject = htmlspecialchars($_POST['subject']);
     }
