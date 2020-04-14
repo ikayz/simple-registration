@@ -1,4 +1,10 @@
 <?php
+  $name = '';
+  $email = '';
+  $subject = '';
+  $comments = '';
+  $result = '';
+
   if (isset($_POST['validate'])) {
     if(empty($_POST['name'])) {
         $name = "Name field is empty";
@@ -18,9 +24,10 @@
         $subject = htmlspecialchars($_POST['subject']);
     }
 
-    echo "Comments: " . trim(htmlspecialchars($_POST['comments']));
+    $comments = trim(htmlspecialchars($_POST['comments']));
+
   } else {
-    echo "Did not receive any request!";
+    $result = "Did not receive any request!";
   }
 ?>
 
@@ -55,6 +62,8 @@
         <td><input type="submit" name="submit"></td>
       </tr>
     </table>
+    <strong>Comments: <br> <?php echo $comments; ?></strong>
+    <p><?php echo $result; ?></p>
   </form>
 </body>
 </html>
