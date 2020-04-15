@@ -65,7 +65,7 @@
         </td>
       </tr>
       <tr>
-        <td>Skills</td>
+        <td>Country</td>
         <td>
           <select name="skills">
             <option value="selected">--Select Country--</option>
@@ -74,6 +74,16 @@
             <option value="namibia">Namibia</option>
             <option value="malawi">Malawi</option>
           </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Skills</td>
+        <td>
+          <input type="checkbox" name="skill"> JavaScript<br>
+          <input type="checkbox" name="skill1"> NodeJS<br>
+          <input type="checkbox" name="skill2"> React<br>
+          <input type="checkbox" name="skill3"> Angular<br>
+          <input type="checkbox" name="skill4"> Python<br>
         </td>
       </tr>
       <tr>
