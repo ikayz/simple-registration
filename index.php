@@ -65,6 +65,18 @@
         </td>
       </tr>
       <tr>
+        <td>Skills</td>
+        <td>
+          <select name="skills">
+            <option value="selected">--Select Country--</option>
+            <option value="angola">Angola</option>
+            <option value="botswana">Botswana</option>
+            <option value="namibia">Namibia</option>
+            <option value="malawi">Malawi</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
         <td>Comments: </td>
         <td><textarea name="comments"></textarea></td>
       </tr>
