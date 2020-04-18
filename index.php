@@ -4,6 +4,10 @@
   $subject = '';
   $comments = '';
   $result = '';
+  $skill1 = '';
+  $skill2 = '';
+  $skill3 = '';
+  $skill4 = '';
   $style_red = 'color: red';
 
   if (isset($_POST['validate'])) {
