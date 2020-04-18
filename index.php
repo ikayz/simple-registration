@@ -79,11 +79,10 @@
       <tr>
         <td>Skills</td>
         <td>
-          <input type="checkbox" name="skill"> JavaScript<br>
-          <input type="checkbox" name="skill1"> NodeJS<br>
-          <input type="checkbox" name="skill2"> React<br>
-          <input type="checkbox" name="skill3"> Angular<br>
-          <input type="checkbox" name="skill4"> Python<br>
+          <input type="checkbox" name="skill1"> JavaScript<br>
+          <input type="checkbox" name="skill2"> NodeJS<br>
+          <input type="checkbox" name="skill3"> React<br>
+          <input type="checkbox" name="skill4"> Angular<br>
         </td>
       </tr>
       <tr>
