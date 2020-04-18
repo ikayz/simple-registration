@@ -5,9 +5,9 @@
   define("DB_NAME", "simple_db"); // Replace simple db with your database name
 
   $conn = mysqli_connect(SERVER, USER, PASS, DB_NAME);
-    if (!$conn) {
-      $error = die("Connection to the database failed");
-    } else {
-      $msg = "Database connection succesful";
-    }
+  if (!$conn) {
+    $error = die("Connection to the database failed: " . mysqli_connect_error());
+  } else {
+    $msg = "Database connection succesful";
+  }
 ?>
