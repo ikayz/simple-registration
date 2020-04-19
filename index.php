@@ -8,7 +8,7 @@
   <title>Retrieving Data from MySQL</title>
 </head>
 <body>
-  <table class="table">
+  <table border="1">
     <thead>
       <th>ID</th>
       <th>Name</th>
