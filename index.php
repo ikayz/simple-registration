@@ -9,9 +9,9 @@
 <body>
   <?php
     $sql = "SELECT * FROM comments";
-    $run_sql = mysqli_connect($conn, $sql);
+    $run_sql = mysqli_query($conn, $sql);
     while($rows = mysqli_fetch_assoc($run_sql)) {
-
+      echo $rows['comments'];
     }
   ?>
 </body>
