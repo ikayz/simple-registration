@@ -1,13 +1,14 @@
-<?php include'conn.php';?>
+<?php include'includes/conn.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
   <title>Retrieving Data from MySQL</title>
 </head>
 <body>
-  <table border="1">
+  <table class="table">
     <thead>
       <th>ID</th>
       <th>Name</th>
@@ -34,5 +35,11 @@
       ?>
     </tbody>
   </table>
+  <script src="js/jquery-3.2.1.slim.min.js" crossorigin="anonymous">
+  </script>
+  <script src="js/popper.min.js" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
 </body>
 </html>
