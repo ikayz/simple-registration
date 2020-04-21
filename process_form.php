@@ -9,6 +9,19 @@
       $country = strip_tags($_POST['country']);
       $comments = trim(htmlspecialchars($_POST['comments']));
 
+      if(empty($_POST['skill1'])) {
+          $_POST['skill1'] = '';
+      }
+      if(empty($_POST['skill2'])) {
+          $_POST['skill2'] = '';
+      }
+      if(empty($_POST['skill3'])) {
+          $_POST['skill3'] = '';
+      }
+      if(empty($_POST['skill4'])) {
+          $_POST['skill4'] = '';
+      }
+
       $insert_sql  = "INSERT INTO comments ";
       $insert_sql .= "('name','email_address','subject','gender'";
       $insert_sql .= ",'skill1','skill2','skill3','skill4','country','comments')";
