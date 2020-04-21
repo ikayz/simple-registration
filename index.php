@@ -7,9 +7,10 @@
         <th>ID</th>
         <th>Name</th>
         <th>Email</th>
-        <th>Skills</th>
         <th>Gender</th>
         <th>Country</th>
+        <th>Access</th>
+        <th>Delete</th>
       </thead>
       <tbody>
         <?php
@@ -20,9 +21,10 @@
                       <td>' . $rows['id'] . '</td>
                       <td>' . $rows['name'] . '</td>
                       <td>' . $rows['email_address'] . '</td>
-                      <td>' . $rows['skill1'] . ',' . $rows['skill2'] . ',' . $rows['skill3'] . ',' .  $rows['skill4'] . '</td>
                       <td>' . $rows['gender'] . '</td>
                       <td>' . $rows['country'] . '</td>
+                      <td><a href="detail.php">Access</a></td>
+                      <td>Delete</td>
                     </tr>
               ';
             }
