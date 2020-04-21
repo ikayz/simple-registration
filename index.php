@@ -1,7 +1,7 @@
 <?php include'includes/conn.php';?>
 <?php include'includes/header.php';?>
 <body>
-  <table border="1">
+  <table class="table table-striped">
     <thead>
       <th>ID</th>
       <th>Name</th>
