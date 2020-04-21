@@ -27,6 +27,8 @@
       $insert_sql .= ",'skill1','skill2','skill3','skill4','country','comments')";
       $insert_sql .= "VALUES ('$name','$email','$subject','$gender'";
       $insert_sql .= ",'$_POST[skill1],'$_POST[skill2]','$_POST[skill3]','$_POST[skill4]','$country','$comments')";
+
+      $run_sql = mysqli_query($conn, $insert_query);
   } else {
     # code...
   }
