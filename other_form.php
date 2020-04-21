@@ -34,10 +34,10 @@
     <div class="form-group row">
       <label for="skills" class="control-label col-sm-1 text-right">Skills</label>
       <div class="col-sm-6">
-        <label class="checkbox-inline"><input type="checkbox" name="skill1" id="skills" > JavaScript</label>
-        <label class="checkbox-inline"><input type="checkbox" name="skill2" id="skills" > Node JS</label>
-        <label class="checkbox-inline"><input type="checkbox" name="skill3" id="skills" > React</label>
-        <label class="checkbox-inline"><input type="checkbox" name="skill4" id="skills" > PHP</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill1" id="skills" value="JavaScript"> JavaScript</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill2" id="skills" value="NodeJS"> Node JS</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill3" id="skills" value="React"> React</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill4" id="skills" value="PHP"> PHP</label>
       </div>
     </div>
     <div class="form-group row">
