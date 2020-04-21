@@ -2,7 +2,7 @@
 
 <div class="container">
   <h1>Submit</h1>
-  <form role="form">
+  <form role="form" action="process_form.php" method="post">
     <div class="form-group row">
       <label for="name" class="control-label col-sm-1 text-right">Name</label>
       <div class="col-sm-3">
@@ -32,12 +32,12 @@
       </div>
     </div>
     <div class="form-group row">
-      <label for="subject" class="control-label col-sm-1 text-right">Skills</label>
+      <label for="skills" class="control-label col-sm-1 text-right">Skills</label>
       <div class="col-sm-6">
-        <label><input type="checkbox" name="skill1" id="skills" class="checkbox-inline"> JavaScript</label>
-        <label><input type="checkbox" name="skill2" id="skills" class="checkbox-inline"> Node JS</label>
-        <label><input type="checkbox" name="skill3" id="skills" class="checkbox-inline"> React</label>
-        <label><input type="checkbox" name="skill4" id="skills" class="checkbox-inline"> PHP</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill1" id="skills" > JavaScript</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill2" id="skills" > Node JS</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill3" id="skills" > React</label>
+        <label class="checkbox-inline"><input type="checkbox" name="skill4" id="skills" > PHP</label>
       </div>
     </div>
     <div class="form-group row">
@@ -61,7 +61,7 @@
     <div class="form-group row">
       <label for="" class="control-label col-sm-1 text-right"></label>
       <div class="col-sm-3">
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <input type="submit" class="btn btn-primary" name="submit" value="submit">
       </div>
     </div>
   </form>
