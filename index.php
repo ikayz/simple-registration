@@ -1,4 +1,9 @@
-<?php include'includes/conn.php';?>
+<?php include'includes/conn.php';
+  if(isset($_GET['delete_id'])) {
+    $delete_sql = "DELETE FROM comments WHERE id = '$_GET[delete_id]'";
+    $run_query = mysqli_query($conn, $delete_sql);
+  }
+?>
 <?php include'includes/header.php';?>
 <body>
   <div class="container">
@@ -24,7 +29,7 @@
                       <td>' . $rows['gender'] . '</td>
                       <td>' . $rows['country'] . '</td>
                       <td><a href="detail.php?user_id=' . $rows['id'] . '">Access</a></td>
-                      <td>Delete</td>
+                      <td><a href="index.php?delete_id=' . $rows['id'] . '">Delete</a></td>
                     </tr>
               ';
             }
