@@ -1,3 +1,20 @@
+<?php
+  include'includes/conn.php';
+  if(isset($_GET['edit_id'])) {
+      $edit_sql = "SELECT FROM comments WHERE id = '$_GET[edit_id]'";
+      $run_query = mysqli_query($conn, $edit_sql);
+      while($rows = mysqli_fetch_assoc($run_query)) {
+        $name = $rows['name'];
+        $email = $rows['email_address'];
+        $subject = $rows['subject'];
+        $gender = $rows['gender'];
+        $country = $rows['country'];
+        $comments = $rows['comments'];
+      }
+  } else {
+
+  }
+?>
 <?php include'includes/header.php'; ?>
 
 <div class="container">
