@@ -30,6 +30,11 @@
       $gender = "";
       $country = "";
       $comments = "";
+      $select_tag = '<select class="form-control" required>
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>';
   }
 ?>
 <?php include'includes/header.php'; ?>
