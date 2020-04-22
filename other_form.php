@@ -10,6 +10,18 @@
         $gender = $rows['gender'];
         $country = $rows['country'];
         $comments = $rows['comments'];
+
+        if($gender == 'male') {
+            $select_tag = '<select class="form-control">
+              <option value="male" selected>Male</option>
+              <option value="female">Female</option>
+            </select>';
+        } else {
+            $select_tag = '<select class="form-control">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>';
+        }
       }
   } else {
       $name = "";
@@ -46,11 +58,7 @@
     <div class="form-group row">
       <label for="gender" class="control-label col-sm-1 text-right">Gender</label>
       <div class="col-sm-3">
-        <select class="form-control" name="gender" id="gender" required>
-          <option value="">-- Select Gender --</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+        <?php echo $select_tag; ?>
       </div>
     </div>
     <div class="form-group row">
