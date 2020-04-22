@@ -23,7 +23,7 @@
                       <td>' . $rows['email_address'] . '</td>
                       <td>' . $rows['gender'] . '</td>
                       <td>' . $rows['country'] . '</td>
-                      <td><a href="detail.php?user_id=' . $row['id'] . '">Access</a></td>
+                      <td><a href="detail.php?user_id=' . $rows['id'] . '">Access</a></td>
                       <td>Delete</td>
                     </tr>
               ';
