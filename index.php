@@ -28,8 +28,8 @@
                       <td>' . $rows['email_address'] . '</td>
                       <td>' . $rows['gender'] . '</td>
                       <td>' . $rows['country'] . '</td>
-                      <td><a href="detail.php?user_id=' . $rows['id'] . '">Access</a></td>
-                      <td><a href="index.php?delete_id=' . $rows['id'] . '">Delete</a></td>
+                      <td><a class="btn btn-primary btn-sm" href="detail.php?user_id=' . $rows['id'] . '">Access</a></td>
+                      <td><a class="btn btn-danger btn-sm" href="index.php?delete_id=' . $rows['id'] . '">Delete</a></td>
                     </tr>
               ';
             }
