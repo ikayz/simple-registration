@@ -12,7 +12,12 @@
         $comments = $rows['comments'];
       }
   } else {
-
+      $name = "";
+      $email = "";
+      $subject = "";
+      $gender = "";
+      $country = "";
+      $comments = "";
   }
 ?>
 <?php include'includes/header.php'; ?>
