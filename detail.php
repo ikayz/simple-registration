@@ -14,31 +14,31 @@
           echo '
               <div class="row">
                 <strong class="col-md-3">Name: </strong>
-                <p class="col-md-3">Frodo</p>
+                <p class="col-md-3">' . $rows['name'] . '</p>
               </div>
               <div class="row">
                 <strong class="col-md-3">Email: </strong>
-                <p class="col-md-3">frodo@middle.com</p>
+                <p class="col-md-3">' . $rows['email_address'] . '</p>
               </div>
               <div class="row">
                 <strong class="col-md-3">Subject: </strong>
-                <p class="col-md-3">Frodo of the Shire</p>
+                <p class="col-md-3">' . $rows['subject'] . '</p>
               </div>
               <div class="row">
                 <strong class="col-md-3">Gender: </strong>
-                <p class="col-md-3">Male</p>
+                <p class="col-md-3">' . $rows['gender'] . '</p>
               </div>
               <div class="row">
                 <strong class="col-md-3">Skills: </strong>
-                <p class="col-md-3">Ring bearer</p>
+                <p class="col-md-3"></p>
               </div>
               <div class="row">
                 <strong class="col-md-3">Country: </strong>
-                <p class="col-md-3">The Shire</p>
+                <p class="col-md-3">' . $rows['country'] . '</p>
               </div>
               <div class="row">
                 <strong class="col-md-3">Comments: </strong>
-                <p class="col-md-3">He is a good lad</p>
+                <p class="col-md-3">' . $rows['comments'] . '</p>
               </div>
           ';
         }
