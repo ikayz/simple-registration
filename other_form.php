@@ -1,7 +1,7 @@
 <?php
   include'includes/conn.php';
   if(isset($_GET['edit_id'])) {
-      $edit_sql = "SELECT FROM comments WHERE id = '$_GET[edit_id]'";
+      $edit_sql = "SELECT * FROM comments WHERE id = '$_GET[edit_id]'";
       $run_query = mysqli_query($conn, $edit_sql);
       while($rows = mysqli_fetch_assoc($run_query)) {
         $name = $rows['name'];
@@ -28,19 +28,19 @@
     <div class="form-group row">
       <label for="name" class="control-label col-sm-1 text-right">Name</label>
       <div class="col-sm-3">
-        <input type="text" name="name" id="name" class="form-control" placeholder="Type name" required>
+        <input type="text" name="name" value="<?php echo $name; ?>" id="name" class="form-control" placeholder="Type name" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="email" class="control-label col-sm-1 text-right">Email</label>
       <div class="col-sm-3">
-        <input type="email" name="email" id="email" class="form-control" placeholder="example@someone.com" required>
+        <input type="email" name="email" value="<?php echo $email; ?>" id="email" class="form-control" placeholder="example@someone.com" required>
       </div>
     </div>
     <div class="form-group row">
       <label for="subject" class="control-label col-sm-1 text-right">Subject</label>
       <div class="col-sm-3">
-        <input type="text" name="subject" id="subject" class="form-control" placeholder="Your subject" required>
+        <input type="text" name="subject" value="<?php echo $subject; ?>" id="subject" class="form-control" placeholder="Your subject" required>
       </div>
     </div>
     <div class="form-group row">
@@ -77,7 +77,8 @@
     <div class="form-group row">
       <label for="comments" class="control-label col-sm-1 text-right">Comments</label>
       <div class="col-sm-3">
-        <textarea class="form-control" name="comments" id="" rows="3" placeholder="Type your comments here"></textarea>
+        <textarea class="form-control" name="comments" value="" id="" rows="3" placeholder="Type your comments here">
+        <?php echo $comments; ?></textarea>
       </div>
     </div>
     <div class="form-group row">
