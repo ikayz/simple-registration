@@ -79,11 +79,18 @@
       <label for="gender" class="control-label col-sm-1 text-right">Country</label>
       <div class="col-sm-3">
         <select class="form-control" name="country" id="gender" required>
-          <option value="">-- Select Country --</option>
-          <option value="angola">Angola</option>
-          <option value="botswana">Botswana</option>
-          <option value="canada">Cananda</option>
-          <option value="zambia">Zambia</option>
+          <?php
+            $select_countries = "SELECT * FROM countries";
+            $run_sql = mysqli_query($conn, $select_countries);
+            while ($rows = mysqli_fetch_assoc($run_sql)) {
+              if($country == $rows['country_code']) {
+                  $selected = 'selected';
+              } else {
+                  $selected = '';
+              }
+              echo '<option value="' . $rows['country_code'] .'" ' . $selected . '>' . $rows['country_name'] . '</option>';
+            }
+          ?>
         </select>
       </div>
     </div>
