@@ -26,9 +26,13 @@
                       <td>' . $rows['id'] . '</td>
                       <td>' . $rows['name'] . '</td>
                       <td>' . $rows['email_address'] . '</td>
-                      <td>' . $rows['gender'] . '</td>
-                      <td>' . $rows['country'] . '</td>
-                      <td><a class="btn btn-primary btn-sm" href="detail.php?user_id=' . $rows['id'] . '">Access</a></td>
+                      <td>' . $rows['gender'] . '</td>';
+                      $select_country = "SELECT * FROM countries WHERE country_code = '$rows[country]'";
+                      $run_query = mysqli_query($conn, $select_country);
+                      while ($country_rows = mysqli_fetch_assoc($run_query)) {
+                          echo '<td>' . $country_rows['country_name'] . '</td>';
+                      }
+                      echo '<td><a class="btn btn-primary btn-sm" href="detail.php?user_id=' . $rows['id'] . '">Access</a></td>
                       <td><a class="btn btn-danger btn-sm" href="index.php?delete_id=' . $rows['id'] . '">Delete</a></td>
                     </tr>
               ';
