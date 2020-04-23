@@ -32,12 +32,16 @@
               <div class="row">
                 <strong class="col-md-3">Skills: </strong>
                 <p class="col-md-3"></p>
-              </div>
-              <div class="row">
+              </div>';
+              $select_country = "SELECT * FROM countries WHERE country_code = '$rows[country]'";
+              $run_country = mysqli_query($conn, $select_country);
+              while($country_rows = mysqli_fetch_assoc($run_country)) {
+                echo '<div class="row">
                 <strong class="col-md-3">Country: </strong>
-                <p class="col-md-3">' . $rows['country'] . '</p>
-              </div>
-              <div class="row">
+                <p class="col-md-3">' . $country_rows['country_name'] . '</p>
+              </div>';
+              }
+              echo '<div class="row">
                 <strong class="col-md-3">Comments: </strong>
                 <p class="col-md-3">' . $rows['comments'] . '</p>
               </div>
